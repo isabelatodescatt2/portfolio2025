@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/materias.css">
+</head>
+<body>
+    <!-- NAVBAR NOVA -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item left">
+                <a href="../index.html" class="nav-link">Sobre mim</a>
+            </div>
+
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logomini.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="nav-items-right">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Matérias</a>
+                    <div class="dropdown-content">
+                        <a href="humanas.html">Humanas</a>
+                        <a href="linguagens.html">Linguagens</a>
+                        <a href="matematica.html">Matemática</a>
+                        <a href="natureza.html">Natureza</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Técnico</a>
+                    <div class="dropdown-content">
+                        <a href="iot.html">IoT</a>
+                        <a href="banco-dados.html">Banco de Dados</a>
+                        <a href="modelagem-sistemas.html">Modelagem de Sistemas</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link pessoal">Pessoal</a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA HUMANAS -->
+    <div class="capaMaterias">
+        <img src="imgs/humanas.png" alt="Humanas">
+    </div>
+
+    <div class="trimestres-container">
+        <div class="abas-trimestres">
+            <button class="aba-trimestre ativo" data-trimestre="1">1º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="2">2º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="3">3º Trimestre</button>
+        </div>
+        
+        <!-- 1º TRIMESTRE -->
+        <div class="conteudo-trimestre ativo" id="trimestre1">
+            <h2>1º Trimestre</h2>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/linhadotempo.png" alt="Linha do Tempo">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Linha do Tempo Interativa</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 18/04/2025</span>
+                    </div>
+                    <p class="atividade-descricao">Criamos uma linha do tempo interativa, utilizando ferramentas digitais, com os principais eventos que afetaram a China entre 1839 (1ª Guerra do Ópio) e 1949 (proclamação da República Popular da China).</p>
+                    <button class="botao-detalhes" onclick="hlinhatempo()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/seminario.png" alt="Seminario de Cuba">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Seminario - Cuba</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 13/02/2025</span>
+                    </div>
+                    <p class="atividade-descricao">Teve como objetivo criar uma apresentação sobre um país (escolhemos Cuba) a partir do modelo em anexo. O importante foi conseguir dados confiáveis e atualizados.</p>
+                    <button class="botao-detalhes" onclick="hseminario()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre2">
+            <h2>2º Trimestre</h2>
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/lisa.png" alt="Atividade Autoritarismo">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Atividade Autoritarismo</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 18/06/2025</span>
+                        <span class="atividade-data">Habilidades: C5 - H30, H36, H39 e H40</span>
+                    </div>
+                    <p class="atividade-descricao">A atividade consistia em relacionar o termo "autoritarismo" com a ficção cinematográfica. Nosso grupo decidiu utilizar a série de TV "Os Simpsons", o que permitiu a compreensão de forma crítica e criativa as relações de poder e características de um líder autoritário.</p>
+                    <button class="botao-detalhes" onclick="hlisa()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/hzambia.png" alt="Atividade Autoritarismo">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Zâmbia 2° Guerra Mundial e Descolonização Africa e Ásia</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 23/08/2025</span>
+                        <span class="atividade-data">Habilidades: H30, H39 e H40</span>
+                    </div>
+                    <p class="atividade-descricao">O trabalho envolvia analisar criticamente a descolonização de um país da Ásia ou da África, destacando como a Segunda Guerra Mundial acelerou o processo de independência no pós-guerra. Fiquei muito satisfeito com a minha pesquisa e com o trabalho que produzi.</p>
+                    <button class="botao-detalhes" onclick="hzambia()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/hcarrossel.png" alt="Atividade Autoritarismo">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Carrosel Holocausto</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 18/06/2025</span>
+                        <span class="atividade-data">Habilidades: C5 - H30; C6 - H40</span>
+                    </div>
+                    <p class="atividade-descricao">O objetivo foi criar um carrossel de imagens para uma rede social, com seis fotos e textos curtos, com o propósito de promover a conscientização sobre o Holocausto e combater notícias falsas. Achei a atividade muito interessante e fiquei satisfeito com o resultado.</p>
+                    <button class="botao-detalhes" onclick="hholocausto()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre3">
+            <h2>3º Trimestre</h2>
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/hbrasilia.png" alt="Nova Capital Brasil">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Atividade Criação Nova Capital para o Brasil</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 17/10/2025</span>
+                        <span class="atividade-data">Habilidades: C5 - H30, H36, H39 e H40</span>
+                    </div>
+                    <p class="atividade-descricao">A tarefa central dessa atividade consistiu no planejamento integral de uma nova capital para o Brasil, abrangendo desde a sua fundamentação conceitual até a sua materialização espacial e arquitetônica.</p>
+                    <button class="botao-detalhes" onclick="hbrasilia()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativHumanas/hvargas.png" alt="Nova Capital Brasil">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Júri Simulado: O Julgamento de Getúlio Vargas</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 17/10/2025</span>
+                        <span class="atividade-data">Habilidades: H39</span>
+                    </div>
+                    <p class="atividade-descricao">Atuei como Carlos Lacerda, a principal testemunha de acusação. Personifiquei o célebre opositor do regime, defendendo com base em pesquisa histórica que o governo Vargas foi marcado por autoritarismo e repressão, utilizando-me de minha oratória para influenciar o júri popular contra o réu.</p>
+                    <button class="botao-detalhes" onclick="hjuriGV()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js//materias.js"></script>
+    <script>
+        // Script simples para as abas
+        document.addEventListener('DOMContentLoaded', function() {
+            const botoesAbas = document.querySelectorAll('.aba-trimestre');
+            
+            botoesAbas.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    // Remove a classe ativa de todos os botões
+                    botoesAbas.forEach(b => b.classList.remove('ativo'));
+                    
+                    // Adiciona a classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    // Esconde todos os conteúdos
+                    document.querySelectorAll('.conteudo-trimestre').forEach(conteudo => {
+                        conteudo.classList.remove('ativo');
+                    });
+                    
+                    // Mostra o conteúdo correspondente
+                    const trimestreId = this.getAttribute('data-trimestre');
+                    document.getElementById('trimestre' + trimestreId).classList.add('ativo');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

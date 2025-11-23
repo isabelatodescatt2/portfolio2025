@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/materias.css">
+</head>
+<body>
+    <!-- NAVBAR NOVA -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item left">
+                <a href="../index.html" class="nav-link">Sobre mim</a>
+            </div>
+
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logomini.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="nav-items-right">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Matérias</a>
+                    <div class="dropdown-content">
+                        <a href="humanas.html">Humanas</a>
+                        <a href="linguagens.html">Linguagens</a>
+                        <a href="matematica.html">Matemática</a>
+                        <a href="natureza.html">Natureza</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Técnico</a>
+                    <div class="dropdown-content">
+                        <a href="iot.html">IoT</a>
+                        <a href="banco-dados.html">Banco de Dados</a>
+                        <a href="modelagem-sistemas.html">Modelagem de Sistemas</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link pessoal">Pessoal</a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA NATUREZA -->
+    <div class="capaMaterias">
+        <img src="imgs/natureza.png" alt="Natureza">
+    </div>
+
+    <div class="trimestres-container">
+        <div class="abas-trimestres">
+            <button class="aba-trimestre ativo" data-trimestre="1">1º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="2">2º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="3">3º Trimestre</button>
+        </div>
+        
+        <!-- 1º TRIMESTRE -->
+        <div class="conteudo-trimestre ativo" id="trimestre1">
+            <h2>1º Trimestre</h2>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/poluicao.png" alt="Apresentação sobre os tipos de poluição">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Apresentação sobre os tipos de poluição</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 14/02/2025</span>
+                        <span class="atividade-data">Habilidades: C1 - H1, H2 e H4</span>
+                    </div>
+                    <p class="atividade-descricao">Realizamos uma pesquisa sobre poluição, após analisar imagens e sobre sinais de poluição na natureza.</p>
+                    <button class="botao-detalhes" onclick="npoluicao()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/estequiometria.png" alt="Relatório sobre Estequiometria e a Indústria Brasileira">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Relatório sobre Estequiometria e a Indústria Brasileira</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 21/03/2025</span>
+                        <span class="atividade-data">Habilidades: C2 - H7, H9 e H10</span>
+                    </div>
+                    <p class="atividade-descricao">Teve como objetivo criar uma apresentação na plataforma "Canva" sobre os estudos e pesquisas realizados sobre Estequiometria e a Indústria Brasileira.</p>
+                    <button class="botao-detalhes" onclick="nestequiometria()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/radioatividade.png" alt="Apresentação sobre Radioatividade">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Apresentação sobre Radioatividade</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 28/02/2025</span>
+                        <span class="atividade-data">Habilidades: C1- H1, H3 e H4</span>
+                    </div>
+                    <p class="atividade-descricao">Criamos uma apresentação na plataforma "Canva" sobre os estudos e pesquisas realizados sobre Radioatividade</p>
+                    <button class="botao-detalhes" onclick="nradioatividade()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/caderno.png" alt="Resumo - Eletrostática">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Resumo - Eletrostática</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 07/04/2025</span>
+                        <span class="atividade-data">Habilidades: ???</span>
+                    </div>
+                    <p class="atividade-descricao">Resumo sobre eletrostática, sais minerais e início das Leis de Ohm</p>
+                    <button class="botao-detalhes" onclick="neletrostatica()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre2">
+            <h2>2º Trimestre</h2>
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/nat_glossario.png" alt="Glossário Ilustrado de Eletroquímica & Eletricidade">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Glossário Ilustrado de Eletroquímica & Eletricidade</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 14/06/2025</span>
+                        <span class="atividade-data">Habilidades: C2 - H6, H7 e H9</span>
+                    </div>
+                    <p class="atividade-descricao">Esta atividade foi um exercício completo de síntese e comunicação científica. Para cada um dos 28 termos (como Lei de Ohm, Eletrólise e DDP), pratiquei a habilidade de traduzir conceitos complexos em uma linguagem acessível, visual e aplicada, conectando a teoria às invenções do mundo real.</p>
+                    <button class="botao-detalhes" onclick="nglossario()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/nat_mapa_sistema.png" alt="Sistema Imunológico e Vacinas">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Sistema Imunológico e Vacinas</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 03/07/2025</span>
+                        <span class="atividade-data">Habilidades: C2 - H6, H7 e H9</span>
+                    </div>
+                    <p class="atividade-descricao">Este mapa mental teve como objetivo decifrar os processos do sistema imunológico. Ao final, fui capaz de identificar as principais células de defesa e suas funções, explicar a diferença entre resposta imune primária e secundária, e relacionar o mecanismo de ação de vacinas e soros na prevenção de doenças.</p>
+                    <button class="botao-detalhes" onclick="nmapasistemas()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/nat_campo.png" alt="Campo Magnético da Terra">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Canva Site - Campo Magnético da Terra</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 08/08/2025</span>
+                        <span class="atividade-data">Habilidades: C4 - H23</span>
+                    </div>
+                    <p class="atividade-descricao">Nesta atividade pesquisamos sobre o campo magnético da Terra, entendemos como ocorrem as auroras polares (com foco especial na aurora austral) e investigamos como tudo isso está conectado à nossa vida e tecnologia, expondo isso por meio da criação de um Canva Site</p>
+                    <button class="botao-detalhes" onclick="autoralcamp()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre3">
+            <h2>3º Trimestre</h2>
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativNatureza/nat_oleo_essencial.png" alt="Extração de óleo essencial">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Extração de óleo essencial</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 18/11/2025</span>
+                        <span class="atividade-data">Habilidades: C4 - H23</span>
+                    </div>
+                    <p class="atividade-descricao">Produzir um vídeo explicando o processo de destilação por arraste a vapor utilizando plantas aromáticas.</p>
+                    <button class="botao-detalhes" onclick="noleoessencial()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/materias.js"></script>
+    <script>
+        // Script para as abas
+        document.addEventListener('DOMContentLoaded', function() {
+            const botoesAbas = document.querySelectorAll('.aba-trimestre');
+            
+            botoesAbas.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    botoesAbas.forEach(b => b.classList.remove('ativo'));
+                    this.classList.add('ativo');
+                    
+                    document.querySelectorAll('.conteudo-trimestre').forEach(conteudo => {
+                        conteudo.classList.remove('ativo');
+                    });
+                    
+                    const trimestreId = this.getAttribute('data-trimestre');
+                    document.getElementById('trimestre' + trimestreId).classList.add('ativo');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

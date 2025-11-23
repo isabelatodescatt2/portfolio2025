@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto; 
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 100%;
+    margin: 0 2rem;
+    height: 90px;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Itens da navbar */
+.nav-items-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-item .left {
+    margin-left: 15rem;
+}
+
+#sobremim {
+    padding-left: 5rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #292730;
+    font-weight: 500;
+    padding: 0.8rem 0.8rem;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+/* Link Pessoal */
+.nav-link.pessoal {
+    background-color: #000;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1.2rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+.nav-link.pessoal:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border: 1px solid #f0f0f0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+    color: #292730;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f8f8;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #292730;
+    transition: 0.3s;
+}
+
+.left .nav-link {
+    padding: 0.5rem 0.8rem;
+}
+
+/* Containers para as imagens */
+.main-content {
+    margin-top: 90px; 
+    padding: 2rem 1rem;
+}
+
+.main-content {
+    position: relative; 
+    z-index: 0;
+}
+
+.main-content::before {
+    margin-bottom: -2rem;
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 27%, rgba(41,39,48,0.3) 100%);
+}
+
+.containers-wrapper {
+    display: flex;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: space-between;
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; 
+    max-height: 400px; 
+}
+
+.responsive-image2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; 
+    max-height: 550px; 
+    margin-right: 10rem;
+    padding-right: 2.3rem;
+}
+
+/* carrossellllll */
+.experiencias-section {
+    background-color: #292730;
+    padding: 4rem 0;
+    margin-top: 2rem;
+}
+
+.experiencias-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.experiencias-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.carrossel-container {
+    overflow: visible; /* Mudado de hidden para visible */
+    position: relative;
+    width: 100%;
+}
+
+.carrossel-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+    padding: 1rem 0;
+    width: max-content; /* Permite que o track expanda conforme necessário */
+}
+
+.experiencia-item {
+    background-color: white;
+    border-radius: 35px;
+    padding: 2rem;
+    min-width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.experiencia-img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.experiencia-img img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.experiencia-titulo {
+    color: #292730;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: left;
+    font-weight: 800;
+    width: 100%;
+    margin-top: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 0.4;
+}
+
+/* Remove os controles já que será automático */
+.carrossel-controls {
+    display: none;
+}
+
+.separar {
+    padding: 1.5rem;
+    background-color: #CAA0AA;
+}
+
+.separar2 {
+    padding: 1.8rem;
+    background-color: #292730;
+}
+
+.separar2 p {
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Container Quem Sou Eu */
+.quem-sou-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.quem-sou-section {
+    position: relative; /* permite o overlay por cima do conteúdo */
+    z-index: 0;
+}
+
+.quem-sou-section::before {
+    margin-bottom: -2rem;
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 27%, rgba(41,39,48,0.5) 100%);
+}
+
+.quem-sou-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.quem-sou-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.quem-sou-left {
+    flex: 1;
+    margin-left: 5rem;
+}
+
+.quem-sou-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #292730;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.quem-sou-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+
+.quem-sou-buttons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-certificados {
+    background-color: #000;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-certificados:hover {
+    background-color: #333;
+    color: white;
+}
+
+.btn-link {
+    color: #292730;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    padding: 0.8rem 0;
+    transition: color 0.3s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.btn-link:hover {
+    color: #666;
+}
+
+.quem-sou-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.minha-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .quem-sou-content {
+        gap: 3rem;
+    }
+    
+    .foto-container {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Responsividade Carrossel */
+@media (max-width: 768px) {
+    .experiencias-section {
+        padding: 2rem 0;
+    }
+
+    .experiencias-container {
+        padding: 0 1rem;
+    }
+
+    .experiencias-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .experiencia-item {
+        min-width: 250px;
+        height: 300px;
+        padding: 1.5rem;
+    }
+
+    .experiencia-img img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .experiencia-titulo {
+        font-size: 1rem;
+    }
+        .quem-sou-section {
+        padding: 3rem 0;
+    }
+    
+    .quem-sou-container {
+        padding: 0 1rem;
+    }
+    
+    .quem-sou-content {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .quem-sou-title {
+        font-size: 2rem;
+    }
+    
+    .quem-sou-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .quem-sou-buttons {
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .btn-link {
+        text-align: center;
+    }
+    
+    .foto-container {
+        width: 300px;
+        height: 300px;
+}
+
+/* matérias!! */
+
+
+
+@media (max-width: 480px) {
+    .experiencias-title {
+        font-size: 1.8rem;
+    }
+
+    .experiencia-item {
+        min-width: 220px;
+        height: 280px;
+        padding: 1rem;
+    }
+
+    .experiencia-img img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .experiencia-titulo {
+        font-size: 1rem;
+    }
+
+        .quem-sou-section {
+        padding: 2rem 0;
+    }
+    
+    .quem-sou-title {
+        font-size: 1.8rem;
+    }
+    
+    .foto-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .btn-certificados {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experiencias-title {
+        font-size: 1.8rem;
+    }
+
+    .experiencia-item {
+        min-width: 220px;
+        height: 280px;
+        padding: 1rem;
+    }
+
+    .experiencia-img img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+        height: 80px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-items-right {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 0;
+        border-top: 1px solid #f0f0f0;
+        gap: 0;
+    }
+
+    .nav-items-right.active {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-link.pessoal {
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        display: none;
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    /* Containers no mobile */
+    .main-content {
+        margin-top: 80px;
+        padding: 1rem;
+    }
+
+    .containers-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .image-container {
+        flex: none;
+    }
+
+    .responsive-image {
+        max-height: 200px; 
+    }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 0.5rem;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .main-content {
+        padding: 0.5rem;
+    }
+
+    .containers-wrapper {
+        gap: 0.5rem;
+    }
+
+    .responsive-image {
+        max-height: 180px;  
+    }
+}
+
+/* Para telas grandes */
+@media (min-width: 1400px) {
+
+    #sobremim {
+        padding-left: 15rem;
+    }
+
+    .nav-container {
+        padding: 0 2rem;
+        margin: 0 15rem;
+    }
+
+    .nav-item .left {
+        margin-left: 3rem;
+    }
+
+    .containers-wrapper {
+        max-width: 1400px;
+    }
+
+    .image-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 50%;
+    }
+}

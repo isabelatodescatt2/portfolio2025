@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Item da esquerda -->
+            <div class="nav-item left">
+                <a id="sobremim" class="nav-link" onclick="sobre()">Sobre mim</a>
+            </div>
+
+            <!-- Logo no centro -->
+            <div class="logo">
+                <a onclick="home()">
+                    <img src="assets/logomini.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Itens da direita -->
+            <div class="nav-items-right">
+                <div class="nav-item dropdown">
+                    <a href="#materias" class="nav-link">Matérias</a>
+                    <div class="dropdown-content">
+                        <a href="materias/humanas.html">Humanas</a>
+                        <a href="materias/linguagens.html">Linguagens</a>
+                        <a href="#matematica">Matemática</a>
+                        <a href="#natureza">Natureza</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#tecnico" class="nav-link">Técnico</a>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#extras" class="nav-link">Extras-curriculares</a>
+                    <div class="dropdown-content">
+                        <a href="#ic-historia">IC História</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#pessoal" class="nav-link pessoal">Pessoal</a>
+                </div>
+            </div>
+
+            <!-- Menu hamburger para mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Containers para as imagens -->
+    <main class="main-content">
+        <div class="containers-wrapper">
+            <div class="image-container">
+                <img src="assets/imagem1.png" alt="Imagem 1" class="responsive-image">
+            </div>
+            <div class="image-container">
+                <img src="assets/imagem2.png" alt="Imagem 2" class="responsive-image2">
+            </div>
+        </div>
+    </main>
+
+    <!-- Carrossel EXPERIENCIAS -->
+    <section class="experiencias-section">
+        <div class="experiencias-container">
+            <h2 class="experiencias-title">EXPERIENCIAS</h2>
+            <div class="carrossel-container">
+                <div class="carrossel-track">
+                    <!-- Item 1 -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-img">
+                            <img src="assets/carrossel/1.png" alt="Experiência 1">
+                        </div>
+                        <h3 class="experiencia-titulo">SITES</h3>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-img">
+                            <img src="assets/carrossel/2.png" alt="Experiência 2">
+                        </div>
+                        <h3 class="experiencia-titulo">FIGMAS</h3>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-img">
+                            <img src="assets/carrossel/3.png" alt="Experiência 3">
+                        </div>
+                        <h3 class="experiencia-titulo">CARTAZES</h3>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-img">
+                            <img src="assets/carrossel/4.png" alt="Experiência 4">
+                        </div>
+                        <h3 class="experiencia-titulo">LOGOS</h3>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-img">
+                            <img src="assets/carrossel/5.png" alt="Experiência 5">
+                        </div>
+                        <h3 class="experiencia-titulo">VÍDEOS</h3>
+                    </div>
+                    <!-- Adicione mais itens se necessário -->
+                </div>
+            </div>
+            <!-- Removidos os controles -->
+        </div>
+    </section>
+
+    <div class="separar">
+        <br>
+    </div>
+
+    <!-- Container Quem Sou Eu -->
+    <section class="quem-sou-section" id="sobreMim">
+        <div class="quem-sou-container">
+            <div class="quem-sou-content">
+                <!-- Lado esquerdo - Texto e botões -->
+                <div class="quem-sou-left">
+                    <h2 class="quem-sou-title">Quem sou eu?</h2>
+                    <p class="quem-sou-text">
+                        Me chamo Isabela, tenho dezessete anos e nasci em Florianópolis, a capital de Santa Catarina. Sou uma pessoa tranquila, mas movida a metas — sempre em busca dos meus objetivos e do crescimento ao longo da minha jornada. Amo arte em todas as suas formas: música, pintura, fotografia... Sou fascinada por livros de diversos gêneros, filmes, jogos e edição. Valorizo muito as pessoas ao meu redor e me esforço para cultivar relações verdadeiras. Para mim, estar presente e fortalecer laços é essencial — afinal, bons relacionamentos são feitos de cuidado e reciprocidade. Além dos meus hobbies, estou focada no autodesenvolvimento. Acredito que minha futura profissão possa ir além dos códigos: pretendo criar soluções que facilitem a vida das pessoas ou até mesmo enfrentem desafios sociais. A tecnologia, pra mim, é uma grande ferramenta para mudanças positivas. 
+                    </p>
+                    <div class="quem-sou-buttons">
+                        <a href="https://drive.google.com/drive/folders/18C_o4lT5eZB5jFXbtkOBe80lW6eBLR0R" target="_blank" class="btn-certificados">Certificados</a>
+                        <a href="https://portfoliobela.carrd.co/" target="_blank" class="btn-link">Ultimo portfolio</a>
+                        <a href="#espaco" class="btn-link">Espaço pessoal</a>
+                    </div>
+                </div>
+                
+                <!-- Lado direito - Foto -->
+                <div class="quem-sou-right">
+                    <div class="foto-container">
+                        <img src="assets/aboutme.png" alt="Minha foto" class="minha-foto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separar2">
+        <p>Isabela dos Santos Todescatt Portfolio @2025</p>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

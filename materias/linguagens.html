@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/materias.css">
+</head>
+<body>
+    <!-- NAVBAR NOVA -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item left">
+                <a href="../index.html" class="nav-link">Sobre mim</a>
+            </div>
+
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logomini.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="nav-items-right">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Matérias</a>
+                    <div class="dropdown-content">
+                        <a href="humanas.html">Humanas</a>
+                        <a href="linguagens.html">Linguagens</a>
+                        <a href="matematica.html">Matemática</a>
+                        <a href="natureza.html">Natureza</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Técnico</a>
+                    <div class="dropdown-content">
+                        <a href="iot.html">IoT</a>
+                        <a href="banco-dados.html">Banco de Dados</a>
+                        <a href="modelagem-sistemas.html">Modelagem de Sistemas</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link pessoal">Pessoal</a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA LINGUAGENS -->
+    <div class="capaMaterias">
+        <img src="imgs/linguagens.png" alt="Linguagens">
+    </div>
+
+    <div class="trimestres-container">
+        <div class="abas-trimestres">
+            <button class="aba-trimestre ativo" data-trimestre="1">1º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="2">2º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="3">3º Trimestre</button>
+        </div>
+        
+        <!-- 1º TRIMESTRE -->
+        <div class="conteudo-trimestre ativo" id="trimestre1">
+            <h2>1º Trimestre</h2>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/redacao.png" alt="Redação Online">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Redação Online</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 16/04/2025</span>
+                        <span class="atividade-data">Habilidades: H6 e H8</span>
+                    </div>
+                    <p class="atividade-descricao">Foi necessário a realização de uma redação com o tema "Desafios Para Inclusão Social por meio dos esportes no Brasil"</p>
+                    <button class="botao-detalhes" onclick="lredacao()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/livropadlet1.png" alt="Padlet">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Padlet</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 17/04/2025</span>
+                        <span class="atividade-data">Habilidades: H17</span>
+                    </div>
+                    <p class="atividade-descricao">Realizamos um comentário sobre o livro "Memórias Poóstumas de Braz Cubas" na plataforma Padlet.</p>
+                    <button class="botao-detalhes" onclick="lpadlet1()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/revista.png" alt="Revista Literária">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Revista Literária</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: ?/?/2025</span>
+                        <span class="atividade-data">Habilidades: H17</span>
+                    </div>
+                    <p class="atividade-descricao">A cada livro que lemos para o vestibular da UFSC, adicionamos atividades e uma descrição sobre ele em um projeto de site. O objetivo é criar um banco de dados que possa ser utilizado para futuro estudo.</p>
+                    <button class="botao-detalhes" onclick="lrevista()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/conto.png" alt="Reconto da obra Pai contra mãe">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Reconto da obra "Pai contra mãe"</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 07/04/2025</span>
+                        <span class="atividade-data">Habilidades: H4 e H14</span>
+                    </div>
+                    <p class="atividade-descricao">Realizamos em duplas a criação de uma história baseada no ponto de vista da mãe, tendo como inspiração o conto "Pai contra mãe".</p>
+                    <button class="botao-detalhes" onclick="lconto()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/biografia.png" alt="Biografia Pessoal">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Biografia Pessoal</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 07/03/2025</span>
+                        <span class="atividade-data">Habilidades: H22</span>
+                    </div>
+                    <p class="atividade-descricao">Componemos uma biografia em terceira pessoa sobre nós mesmos, destacando nossas experiências e características pessoais.</p>
+                    <button class="botao-detalhes" onclick="lbiografia()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/repertorio.png" alt="Site Repertório para o Enem">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Site "Repertório para o Enem"</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 18/04/2025</span>
+                        <span class="atividade-data">Habilidades: H23</span>
+                    </div>
+                    <p class="atividade-descricao">Criamos um site no Google Sites, que reune diversas fontes de informação (sites de notícias, canais do Youtube, podcasts, livros, filmes, séries etc), e que está disponível para os alunos de terceiro ano.</p>
+                    <button class="botao-detalhes" onclick="lrepertorio()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre2">
+            <h2>2º Trimestre</h2>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/revista.png" alt="Revista Literária">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Revista Literária</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: ?/?/2025</span>
+                        <span class="atividade-data">Habilidades: H17</span>
+                    </div>
+                    <p class="atividade-descricao">A cada livro que lemos para o vestibular da UFSC, adicionamos atividades e uma descrição sobre ele em um projeto de site. O objetivo é criar um banco de dados que possa ser utilizado para futuro estudo.</p>
+                    <button class="botao-detalhes" onclick="lrevista()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/redacao.png" alt="Redação Online">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Redação Online</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 29/06/2025</span>
+                        <span class="atividade-data">Habilidades: H6 e H8</span>
+                    </div>
+                    <p class="atividade-descricao">Foi necessário a realização de uma redação com o tema "Alternativas para reduzir a vulnerabilidade dos jovens frente aos golpes virtuais no Brasil"</p>
+                    <button class="botao-detalhes" onclick="lredacao()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/arte consome.png" alt="Que Tipo De Arte Você Consome">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Que Tipo De Arte Você Consome? - Inglês</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 08/08/2025</span>
+                        <span class="atividade-data">Habilidades: H2 e H15</span>
+                    </div>
+                    <p class="atividade-descricao">Atividade que consistia criar um canva sobre os tipos de arte que consumimos, como música, filmes, séries, livros, jogos, entre outros, descrevendo nossos gostos e preferências em inglês.</p>
+                    <button class="botao-detalhes" onclick="lingles()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre3">
+            <h2>3º Trimestre</h2>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/lredacaocancelamento.png" alt="Nota 840 na Redação estilo ENEM">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Red1000</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 19/10/2025</span>
+                        <span class="atividade-data">H12 - Empregar recursos linguísticos para identificar e apresentar pontos de vista.</span>
+                    </div>
+                    <p class="atividade-descricao">Realização de uma redação disserto-argumentativa com o tema "Como combater a cultura do cancelamento no Brasil contemporâneo?"</p>
+                    <button class="botao-detalhes" onclick="lredacaocancelamento()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/reels.png" alt="Reel/TikTok sobre a obra de Salim Miguel">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Reel / TikTok sobre a obra de Salim Miguel</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 17/11/2025</span>
+                        <span class="atividade-data">H15 - Produzir trabalhos individuais e coletivos</span>
+                    </div>
+                    <p class="atividade-descricao">No projeto, fui responsável pela edição e finalização do Reel/TikTok sobre a obra de Salim Miguel. Minha atuação concentrou-se em transformar o material bruto em um conteúdo dinâmico, com foco no ritmo, trilha sonora e legendas para engajar o público e transmitir o impacto da narrativa literária.</p>
+                    <button class="botao-detalhes" onclick="lreels()">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/ativLinguagens/carta.png" alt="Carta de Intenção">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Carta de Intenção</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 17/11/2025</span>
+                        <span class="atividade-data">H16 - Relacionar práticas corporais e artísticas à própria vida</span>
+                    </div>
+                    <p class="atividade-descricao">Redigi uma carta de intenção seguindo os critérios da UFSC, articulando de forma clara e estratégica minha trajetória, interesses acadêmicos e motivações para o curso escolhido. O foco foi demonstrar alinhamento entre minha formação pessoal, o projeto da universidade e a contribuição que pretendo oferecer à área.</p>
+                    <button class="botao-detalhes" onclick="lcartaintencao()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/materias.js"></script>
+    <script>
+        // Script para as abas
+        document.addEventListener('DOMContentLoaded', function() {
+            const botoesAbas = document.querySelectorAll('.aba-trimestre');
+            
+            botoesAbas.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    botoesAbas.forEach(b => b.classList.remove('ativo'));
+                    this.classList.add('ativo');
+                    
+                    document.querySelectorAll('.conteudo-trimestre').forEach(conteudo => {
+                        conteudo.classList.remove('ativo');
+                    });
+                    
+                    const trimestreId = this.getAttribute('data-trimestre');
+                    document.getElementById('trimestre' + trimestreId).classList.add('ativo');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
