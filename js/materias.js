@@ -234,6 +234,14 @@ function noleoessencial(){
     window.open("https://www.youtube.com/shorts/p7EYvoruS8I", "_blank");
 }
 
+function ncristalizaçãopadlet(){
+    window.open("https://padlet.com/romuelsilva/trabalhos-3a-x9g8c2ybggrprlju", "_blank")
+}
+
+function nenergia(){
+    window.open("https://www.canva.com/design/DAGzzGN-Qz4/jaNt5g4dWBesuX1GbZkMjA/edit", "_blank")
+}
+
 // MATEMÁTICA -------------------------------------
 // matematica 1
 function hfilme() {
