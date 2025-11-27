@@ -152,6 +152,10 @@ function hjuriGV(){
     window.open("https://docs.google.com/document/d/1-epv8M0-tYWl4Nh3l0_ThF0SErqllkxs96SdBtOO9HU/edit?usp=sharing", "_blank");
 }
 
+function hgovernos(){
+    window.open("https://docs.google.com/document/d/1P4_kcH2XzZ-6lPmptNJPCKz9mnRT7KiVA7DtWDYHFM4/edit?usp=sharing", "_blank")
+}
+
 
 // LINGUAGENS -------------------------------------
 // linguagens 1
