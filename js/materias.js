@@ -282,6 +282,12 @@ function mswireframe(){
 
 // BANCO DE DADOS --------------------------------
 // banco de dados 2
-function bdbrmodelo(){
+function bdmodelo(){
     window.open("https://docs.google.com/document/d/1-JJ_iRPeXT4c-dePoMTHipe9ByR5kSyHn60UaOc5asM/edit?usp=sharing", "_blank");
+}
+
+// TESTE DE SISTEMAS --------------------------------
+// teste de sistemas 3
+function tsbluemoon(){
+    window.open("https://isabelatodescatt2.github.io/blueMoon/", "_blank");
 }

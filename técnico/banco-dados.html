@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelagem de Sistemas - Isabela Todescatt </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/materias.css">
+</head>
+<body>
+    <!-- NAVBAR NOVA -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-item left">
+                <a href="../index.html" class="nav-link">Sobre mim</a>
+            </div>
+
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logomini.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="nav-items-right">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Matérias</a>
+                    <div class="dropdown-content">
+                        <a href="materias/humanas.html">Humanas</a>
+                        <a href="materias/linguagens.html">Linguagens</a>
+                        <a href="materias/matematica">Matemática</a>
+                        <a href="materias/natureza">Natureza</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Técnico</a>
+                    <div class="dropdown-content">
+                        <a href="banco-dados.html">Banco de Dados</a>
+                        <a href="modelagem-sistemas.html">Modelagem de Sistemas</a>
+                        <a href="teste-sistemas.html">Teste de Sistemas</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link pessoal">Pessoal</a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA HUMANAS -->
+    <div class="capaMaterias">
+        <img src="imgs/bd.png" alt="Banco de Dados">
+    </div>
+
+    <div class="trimestres-container">
+        <div class="abas-trimestres">
+            <button class="aba-trimestre" data-trimestre="2">2º Trimestre</button>
+        </div>
+        
+        <!-- 2º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre2">
+            <h2>2º Trimestre</h2>
+            <div class="atividade">
+                <div class="atividade-imagem">
+                    <img src="imgs/bdmodelo.png" alt="Atividade Modelo Conceitual">
+                </div>
+                <div class="atividade-conteudo">
+                    <h3 class="atividade-titulo">Exercicíos Modelo Conceitual</h3>
+                    <div class="atividade-info">
+                        <span class="atividade-data">Data de entrega: 18/06/2025</span>
+                        <span class="atividade-data">Habilidades: H1, H2, H3 e H4</span>
+                    </div>
+                    <p class="atividade-descricao">O objetivo da atividade era fazer três exercicíos de Modelo Conceitual de Banco de Dados no Br Modelo.</p>
+                    <button class="botao-detalhes" onclick="bdmodelo()">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js//materias.js"></script>
+    <script>
+        // Script simples para as abas
+        document.addEventListener('DOMContentLoaded', function() {
+            const botoesAbas = document.querySelectorAll('.aba-trimestre');
+            
+            botoesAbas.forEach(botao => {
+                botao.addEventListener('click', function() {
+                    // Remove a classe ativa de todos os botões
+                    botoesAbas.forEach(b => b.classList.remove('ativo'));
+                    
+                    // Adiciona a classe ativa ao botão clicado
+                    this.classList.add('ativo');
+                    
+                    // Esconde todos os conteúdos
+                    document.querySelectorAll('.conteudo-trimestre').forEach(conteudo => {
+                        conteudo.classList.remove('ativo');
+                    });
+                    
+                    // Mostra o conteúdo correspondente
+                    const trimestreId = this.getAttribute('data-trimestre');
+                    document.getElementById('trimestre' + trimestreId).classList.add('ativo');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
