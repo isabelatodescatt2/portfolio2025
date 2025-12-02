@@ -432,6 +432,753 @@ body {
     background-color: #b58e98;
 }
 
+/* ============================================
+   SEÇÃO DE INICIAÇÃO CIENTÍFICA
+   ============================================ */
+
+.ic-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.ic-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.ic-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #292730;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.ic-content {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.ic-left {
+    flex: 1;
+}
+
+.ic-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+
+.ic-highlight {
+    background-color: #f8f8f8;
+    border-left: 4px solid #292730;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.ic-highlight p {
+    color: #292730;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.ic-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ic-video-container {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ic-video-container iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+.ic-channel-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.ic-channel-link:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.youtube-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+/* Objetivos da IC */
+.ic-objetivos {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background-color: #292730;
+    border-radius: 12px;
+    color: white;
+}
+
+.ic-objetivos-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.ic-objetivos-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ic-objetivo-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.ic-objetivo-item:last-child {
+    margin-bottom: 0;
+}
+
+.ic-objetivo-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: #CAA0AA;
+    margin-top: 0.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .ic-content {
+        gap: 3rem;
+    }
+    
+    .ic-video-container {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ic-section {
+        padding: 3rem 0;
+    }
+    
+    .ic-container {
+        padding: 0 1rem;
+    }
+    
+    .ic-title {
+        font-size: 2rem;
+    }
+    
+    .ic-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .ic-video-container {
+        max-width: 100%;
+    }
+    
+    .ic-video-container iframe {
+        height: 250px;
+    }
+    
+    .ic-objetivos {
+        padding: 2rem;
+    }
+    
+    .ic-objetivos-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ic-section {
+        padding: 2rem 0;
+    }
+    
+    .ic-title {
+        font-size: 1.8rem;
+    }
+    
+    .ic-text {
+        font-size: 1rem;
+    }
+    
+    .ic-highlight {
+        padding: 1rem;
+    }
+    
+    .ic-video-container iframe {
+        height: 200px;
+    }
+    
+    .ic-channel-link {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .ic-objetivos {
+        padding: 1.5rem;
+    }
+    
+    .ic-objetivos-title {
+        font-size: 1.4rem;
+    }
+    
+    .ic-objetivo-item {
+        font-size: 1rem;
+    }
+}
+
+.integrantes-section {
+    padding: 4rem 0;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.integrantes-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.integrantes-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #292730;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.integrantes-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.integrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.integrante-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.integrante-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.orientador-card {
+    border: 2px solid #CAA0AA;
+}
+
+.integrante-imagem {
+    height: 250px;
+    overflow: hidden;
+}
+
+.integrante-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.integrante-card:hover .integrante-imagem img {
+    transform: scale(1.05);
+}
+
+.integrante-info {
+    padding: 1.8rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.integrante-nome {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #292730;
+    margin-bottom: 0.3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.integrante-funcao {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.orientador-funcao {
+    color: #CAA0AA;
+    font-weight: 600;
+}
+
+.integrante-descricao {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.integrante-descricao p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.integrante-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.habilidade-tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.orientador-card .habilidade-tag {
+    background-color: #f8e6ea;
+    color: #a05a6d;
+}
+
+.integrante-contato {
+    display: flex;
+    gap: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.2rem;
+}
+
+.contato-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #292730;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.contato-link:hover {
+    color: #CAA0AA;
+}
+
+.contato-icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.equipe-mensagem {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 4px solid #292730;
+}
+
+.mensagem-texto {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-style: italic;
+    text-align: left;
+}
+
+/* CSS para a seção de certificados */
+.certificados-section {
+    padding: 4rem 0;
+    background-color: white;
+    position: relative;
+}
+
+.certificados-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.certificados-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #292730;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.certificados-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.certificados-info {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.certificados-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Inter', sans-serif;
+}
+
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.certificado-card {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificado-card:hover {
+    transform: translateY(-5px);
+    border-color: #CAA0AA;
+}
+
+.certificado-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.certificado-badge {
+    width: 50px;
+    height: 50px;
+    background-color: #CAA0AA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.certificado-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.certificado-nome {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #292730;
+    margin: 0 0 0.3rem 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.certificado-equipe {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.certificado-detalhes {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.detalhe-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+.detalhe-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.detalhe-label {
+    font-weight: 600;
+    color: #666;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.detalhe-valor {
+    color: #292730;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    text-align: right;
+}
+
+.certificado-acoes {
+    margin-top: auto;
+}
+
+.btn-ver-certificado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #292730;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ver-certificado:hover {
+    background-color: #CAA0AA;
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.onhb-sobre {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 2.5rem;
+    border-left: 4px solid #292730;
+}
+
+.sobre-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #292730;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.sobre-content {
+    font-family: 'Inter', sans-serif;
+}
+
+.sobre-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.sobre-lista {
+    margin: 1.5rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.sobre-lista li {
+    margin-bottom: 0.8rem;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.sobre-lista li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .certificados-section {
+        padding: 3rem 0;
+    }
+    
+    .certificados-container {
+        padding: 0 1rem;
+    }
+    
+    .certificados-title {
+        font-size: 2rem;
+    }
+    
+    .certificados-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .certificado-card {
+        padding: 1.5rem;
+    }
+    
+    .onhb-sobre {
+        padding: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificados-section {
+        padding: 2rem 0;
+    }
+    
+    .certificados-title {
+        font-size: 1.8rem;
+    }
+    
+    .certificado-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .detalhe-item {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .detalhe-valor {
+        text-align: left;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .integrantes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .integrantes-section {
+        padding: 3rem 0;
+    }
+    
+    .integrantes-container {
+        padding: 0 1rem;
+    }
+    
+    .integrantes-title {
+        font-size: 2rem;
+    }
+    
+    .integrantes-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .integrante-imagem {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .integrantes-section {
+        padding: 2rem 0;
+    }
+    
+    .integrantes-title {
+        font-size: 1.8rem;
+    }
+    
+    .integrante-info {
+        padding: 1.5rem;
+    }
+    
+    .integrante-nome {
+        font-size: 1.3rem;
+    }
+    
+    .integrante-contato {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+/* Para telas grandes */
+@media (min-width: 1400px) {
+    .ic-container {
+        max-width: 1400px;
+    }
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .atividade {
