@@ -291,3 +291,7 @@ function bdmodelo(){
 function tsbluemoon(){
     window.open("https://isabelatodescatt2.github.io/blueMoon/", "_blank");
 }
+
+function tsecovigia(){
+    window.open("https://isabelatodescatt2.github.io/EcoVigia/", "_blank");
+}
