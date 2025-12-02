@@ -28,10 +28,10 @@
                 <div class="nav-item dropdown">
                     <a href="#materias" class="nav-link">Matérias</a>
                     <div class="dropdown-content">
-                        <a href="materias/humanas.html">Humanas</a>
-                        <a href="materias/linguagens.html">Linguagens</a>
-                        <a href="materias/matematica">Matemática</a>
-                        <a href="materias/natureza">Natureza</a>
+                        <a href="../materias/humanas.html">Humanas</a>
+                        <a href="../materias/linguagens.html">Linguagens</a>
+                        <a href="../materias/matematica.html">Matemática</a>
+                        <a href="../materias/natureza.html">Natureza</a>
                     </div>
                 </div>
 
@@ -71,12 +71,30 @@
 
     <div class="trimestres-container">
         <div class="abas-trimestres">
+            <button class="aba-trimestre ativo" data-trimestre="1">1º Trimestre</button>
+            <button class="aba-trimestre" data-trimestre="2">2º Trimestre</button>
             <button class="aba-trimestre" data-trimestre="3">3º Trimestre</button>
+        </div>
+
+        <!-- 1º TRIMESTRE -->
+        <div class="conteudo-trimestre ativo" id="trimestre1">
+            <h2>1º Trimestre</h2>
+                        <div class="atividade">
+                <p>Nada nesse trimestre!</p>
+            </div>
+        </div>
+
+        <!-- 2º TRIMESTRE -->
+        <div class="conteudo-trimestre" id="trimestre2">
+            <h2>2º Trimestre</h2>
+            <div class="atividade">
+                <p>Nada nesse trimestre!</p>
+            </div>  
         </div>
         
         <!-- 3º TRIMESTRE -->
-        <div class="conteudo-trimestre" id="trimestre2">
-            <h2>2º Trimestre</h2>
+        <div class="conteudo-trimestre" id="trimestre3">
+            <h2>3º Trimestre</h2>
             <div class="atividade">
                 <div class="atividade-imagem">
                     <img src="imgs/tsbluemoon.png" alt="Atividade Site Blue Moon">
@@ -90,7 +108,7 @@
                     <p class="atividade-descricao">O objetivo da atividade era produzir um site com um back-end e front-end em React e Node. Pegamos o tema escola de música e fizemos com base na minha banda Blue Moon.</p>
                     <button class="botao-detalhes" onclick="tsbluemoon()">Ver mais</button>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
